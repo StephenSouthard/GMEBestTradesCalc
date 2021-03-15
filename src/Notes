@@ -1,0 +1,10 @@
+Need to finish adding in the 5 min different percentages using: 
+
+SP500.setFiveMinPercentChanges(Element row, Company nextCompany, MarketTimesOpenClose times,
+			TodaysDate todaysDate)  
+			
+	When I call this.document = Jsoup.connect(url).get(); (line 134) it takes a while to load.
+	Find a way to collect the 5 min data from each ticker's personal page; and faster than it is.
+	
+	
+Possibly make the Company data structure into a DoublyLinkedHashMap, instead of a DoublyLinkedList
