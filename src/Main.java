@@ -20,7 +20,9 @@ public class Main {
 	public static void main(String[] args) throws IOException, ParseException {
 
 		GMEStruct sp = new GMEStruct();
-//		MarketTimesOpenClose times = new MarketTimesOpenClose();
+
+		int maxP = (int) Calculations.maxPercent(sp.timePrice);
+		System.out.println(maxP + " %" + " profit over last 5 days with 5 min trading intervals");
 
 		System.out.println("done");
 	}
