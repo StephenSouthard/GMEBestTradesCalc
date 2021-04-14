@@ -26,7 +26,7 @@ public class GMEStruct {
 	private String makeURL() {
 		String todaysDate = DateFormat.todaysDate();
 		String lastWeeksDate = DateFormat.lastWeeksDate();
-		String url = "https://fastquote.fidelity.com/service/marketdata/historical/chart/json?productid=research&symbols=GME&startDate="
+		String url = "https://fastquote.fidelity.com/service/marketdata/historical/chart/json?productid=research&symbols=TSLA&startDate="
 				+ lastWeeksDate + "-00:00:00&endDate=" + todaysDate
 				+ "-23:59:59&barWidth=5&extendedHours=N&quoteType=R&corpActions=Y&timestamp=start&uuid=591a66bc-5209-11df-b5f7-9bc8b53daa77&callback=jQuery111107107642419280338_1615563760051&_=1615563760054";
 		return url;

@@ -22,6 +22,8 @@ public class Main {
 		GMEStruct sp = new GMEStruct();
 
 		int maxP = (int) Calculations.maxPercent(sp.timePrice);
+		System.out.println(sp.timePrice.get(0));
+		System.out.println(sp.timePrice.get(sp.timePrice.size() - 1));
 		System.out.println(maxP + " %" + " profit over last 5 days with 5 min trading intervals");
 
 		System.out.println("done");
