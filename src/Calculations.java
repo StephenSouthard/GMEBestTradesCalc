@@ -6,7 +6,7 @@ public class Calculations {
 		float max = 0;
 		for (int i = 1; i < timePrice.size(); i++) {
 			if (timePrice.get(i) > timePrice.get(i - 1))
-				max += timePrice.get(i) - timePrice.get(i - 1);
+				max += (timePrice.get(i) - timePrice.get(i - 1)) / timePrice.get(i) * 100;
 		}
 		return max;
 	}
